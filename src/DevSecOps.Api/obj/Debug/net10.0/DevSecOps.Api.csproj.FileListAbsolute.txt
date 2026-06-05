@@ -31,3 +31,4 @@ C:\LAB\devsecops-api\src\DevSecOps.Api\obj\Debug\net10.0\refint\DevSecOps.Api.dl
 C:\LAB\devsecops-api\src\DevSecOps.Api\obj\Debug\net10.0\DevSecOps.Api.pdb
 C:\LAB\devsecops-api\src\DevSecOps.Api\obj\Debug\net10.0\DevSecOps.Api.genruntimeconfig.cache
 C:\LAB\devsecops-api\src\DevSecOps.Api\obj\Debug\net10.0\ref\DevSecOps.Api.dll
+C:\LAB\devsecops-api\src\DevSecOps.Api\obj\Debug\net10.0\DevSecOps.Api.sourcelink.json

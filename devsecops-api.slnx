@@ -1,6 +1,8 @@
 <Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DevSecOps.Api/DevSecOps.Api.csproj" />
+  </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/DevSecOps.Api.Tests/DevSecOps.Api.Tests.csproj" />
   </Folder>
-  <Project Path="DevSecOps.Api/DevSecOps.Api.csproj" />
 </Solution>

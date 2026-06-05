@@ -3,7 +3,7 @@ name: ci
 on:
  push:
   branches: [main]
- pull-request:
+ pull_request:
   branches: [main]
  workflow_dispatch:
 
@@ -11,21 +11,20 @@ jobs:
  build-test-security:
   runs-on: ubunu-24.04
 
-steps: 
- - name: Checkout repository
-   uses: actions/checkout@v6
+  steps: 
+  - name: Checkout repository
+    uses: actions/checkout@v6
 
- - name: Setup .Net SDK
-   uses: actions/setup-dotnet@v5
-   with:
-    dotnet-version: '10.0.x'
+  - name: Setup .Net SDK
+    uses: actions/setup-dotnet@v5
+    with:
+      dotnet-version: '10.0.x'
 
-
-- name: Restore dependencies
-run: dotnet restore
-- name: Build
-run: dotnet build --configuration Release --no-restore
-- name: Test
-run: dotnet test --configuration Release --no-build --verbosity normal
-- name: Dependency vulnerability check
-run: dotnet list package --vulnerable --include-transitive	
+  - name: Restore dependencies
+    run: dotnet restore
+  - name: Build
+    run: dotnet build --configuration Release --no-restore
+  - name: Test
+    run: dotnet test --configuration Release --no-build --verbosity normal
+  - name: Dependency vulnerability check
+    run: dotnet list package --vulnerable --include-transitive	
